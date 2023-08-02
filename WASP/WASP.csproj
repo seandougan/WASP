@@ -74,4 +74,10 @@
       <Folder Include="Model\Options\" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Reference Include="Microsoft.iOS">
+        <HintPath>..\..\..\..\..\Program Files\dotnet\packs\Microsoft.iOS.Ref\16.2.1024\ref\net7.0\Microsoft.iOS.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
 </Project>
