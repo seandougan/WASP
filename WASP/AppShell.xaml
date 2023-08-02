@@ -6,8 +6,9 @@
     xmlns:local="clr-namespace:WASP"
     Shell.FlyoutBehavior="Disabled">
 
+
     <ShellContent
-        Title="Home"
+        Title="Wasp"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 

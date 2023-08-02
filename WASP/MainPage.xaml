@@ -3,39 +3,36 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="WASP.MainPage">
 
-    <ScrollView>
-        <VerticalStackLayout
-            Spacing="25"
-            Padding="30,0"
-            VerticalOptions="Center">
+    <Grid Grid.RowDefinitions="40,*,Auto"
+          Grid.ColumnDefinitions="*">
+        <ScrollView  Grid.Row="1"
+                     Grid.Column="0"
+                     HorizontalOptions="Center">
+            <TableView Intent="Menu"
+                      
+                       HorizontalOptions="Center">
+                <TableRoot>
+                    <TableSection Title="Chapters">
+                        <TextCell Text="1. Introduction to .NET MAUI"
+                                  Detail="Learn about .NET MAUI and what it provides." />
+                        <TextCell Text="2. Anatomy of an app"
+                                  Detail="Learn about the visual elements in .NET MAUI" />
+                        <TextCell Text="3. Text"
+                                  Detail="Learn about the .NET MAUI controls that display text." />
+                        <TextCell Text="4. Dealing with sizes"
+                                  Detail="Learn how to size .NET MAUI controls on screen." />
+                        <TextCell Text="5. XAML vs code"
+                                  Detail="Learn more about creating your UI in XAML." />
 
-            <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
-
-            <Label
-                Text="Hello, World!"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
-
-            <Label
-                Text="Welcome to .NET Multi-platform App UI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
-                HorizontalOptions="Center" />
-
-            <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
-
-        </VerticalStackLayout>
-    </ScrollView>
-
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+        </ScrollView>
+        <StackLayout HorizontalOptions="Center"
+                     Grid.Row="2"
+                     Grid.Column="0">
+            <Label Text="Scan for Access Points"/>
+            <Switch/>
+        </StackLayout>
+    </Grid>
 </ContentPage>
