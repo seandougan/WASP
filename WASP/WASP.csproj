@@ -58,7 +58,15 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="View\" />
+      <Compile Update="View\SettingsPage.xaml.cs">
+        <DependentUpon>SettingsPage.xaml</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+      <MauiXaml Update="View\SettingsPage.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </MauiXaml>
     </ItemGroup>
 
 </Project>

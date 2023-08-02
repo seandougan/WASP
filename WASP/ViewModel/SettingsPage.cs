@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WASP.ViewModel
 {
-    sealed class MainPage
+    internal class SettingsPage
     {
     }
 }

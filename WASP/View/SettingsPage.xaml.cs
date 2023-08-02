@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WASP.ViewModel
+namespace WASP.View;
+
+public partial class SettingsPage : ContentPage
 {
-    sealed class MainPage
+    public SettingsPage()
     {
+        InitializeComponent();
     }
 }
