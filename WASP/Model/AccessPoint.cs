@@ -35,5 +35,10 @@ namespace WASP.Model
 
         [Description("DHCP is a network protocol used to assign IP addresses to devices connecting to the network. Access points may act as DHCP servers to assign IP addresses to wireless devices.")]
         public string DHCP { get; }
+
+        public AccessPoint()
+        {
+            
+        }
     }
 }

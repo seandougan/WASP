@@ -71,6 +71,7 @@
 
     <ItemGroup>
       <Folder Include="Enum\" />
+      <Folder Include="Model\Options\" />
     </ItemGroup>
 
 </Project>
